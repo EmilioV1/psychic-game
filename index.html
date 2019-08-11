@@ -8,13 +8,23 @@
         <link rel="stylesheet" href="assets/css/reset.css">
     </head>
     <body>
-        <h1>Psychic</h1>
-        <h1>Guess what letter I am thinking of!</h1>
-
-            <p id="wins"></p>
-            <p id="losses"></p>
-            <p id="turns"></p>
-            <p id="guesses"></p>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">[ Psychic Game ]</h1>
+                <p class="lead">Guess what letter I am thinking of!</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">
+                 | Scoreboard |
+            </div>
+             <ul class="list-group list-group-flush">
+                <li id = "wins" class="list-group-item"></li>
+                <li id = "losses" class="list-group-item"></li>
+                <li id = "turns" class="list-group-item"></li>
+                <li id = "guesses" class="list-group-item"></li>
+            </ul>
+        </div>
     
     <script type = "text/javascript" src = "assets/javascript/game.js"></script>
     </body>
