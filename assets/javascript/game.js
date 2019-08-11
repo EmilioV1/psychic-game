@@ -10,6 +10,7 @@ var letterGuesses = [];
 document.getElementById("wins").innerHTML = "Wins:  " + wins;
 document.getElementById("losses").innerHTML = "Losses:  " + losses;
 document.getElementById("turns").innerHTML = "Turns Left:  " + numGuesses;
+document.getElementById("guesses").innerHTML = "Letters Guessed:  " + letterGuesses;
 
 // Listens for a key to be pressed.
 document.onkeyup = function(){
@@ -24,7 +25,7 @@ document.onkeyup = function(){
     console.log(computerGuess);
 
     // Compares user and computer guess and adds to wins or losses.
-    if (userGuess === computerGuess, wins++){
+    if (userGuess = computerGuess, wins++){
 
         document.getElementById("wins").innerHTML = "Wins:  " + wins;
     } 
