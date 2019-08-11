@@ -29,9 +29,16 @@ document.onkeyup = function(){
         document.getElementById("wins").innerHTML = "Wins:  " + wins;
     } 
         // If user and computer do not match increment losses and decrement numGuesses.
-        else if (userGuess !== computerGuess, losses++, numGuesses--){
+        else if(userGuess !== computerGuess, losses++, numGuesses--){
 
             document.getElementById("losses").innerHTML = "Losses:  " + losses;
             document.getElementById("turns").innerHTML = "Turns Left:  " + numGuesses;
         }
+    // Check scoreboard for restrictions and reset game. 
+    if(wins === 10){
+        alert("Victory!")
+    }
+    if(losses === 9||numGuesses === 0){
+        alert("Game Over!")
+    }
 }
