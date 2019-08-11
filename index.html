@@ -3,7 +3,15 @@
     <head>
 
     </head>
+    <header>Psychic Game</header>
     <body>
+        <h1>Guess what letter I am thinking of!</h1>
+
+    <p id="wins"></p>
+    <p id="losses"></p>
+    <p id="turns"></p>
+    <p id="guesses"></p>
+    
     <script type = "text/javascript">
 
 // Variables Established
@@ -11,17 +19,20 @@
     var wins = 0;
     var losses = 0;
 	var numGuesses = 9;
-    var guessChoices = [];
+    var letterGuesses = [];
 
 // Listens for a key to be pressed.
     document.onkeyup = function(){
         var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
 
-    console.log(userGuess);
+        console.log(userGuess);
 
-    var computerGuess = options[Math.floor(Math.random()*computerChoices.length)];
+    var computerGuess = computerChoices[Math.floor(Math.random()*computerChoices.length)];
 
-    console.log(computerGuess);
+        console.log(computerGuess);
+
+    letterGuesses.push(userGuess);
+    document.getElementById("guesses").innerHTML = "Letters Guessed:  "+letterGuesses;
     }
 
     </script>
