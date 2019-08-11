@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+
     </head>
     <body>
-    <script type = "text/javascript" src = "assets/javascript/game.js" ></script>
+    <script type = "text/javascript">
+    
+    var options = ["r", "p", "s"]
+
+// Listens for a key to be pressed.
+    document.onkeyup = function(){
+        var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+
+    console.log(userGuess);
+
+    // var computerGuess = options[Math.floor(Math.random()*options.length)];
+
+    // console.log(computerGuess);
+    }
+
+    </script>
     </body>
 </html>
